@@ -1,0 +1,23 @@
+class student:
+    address = "Delhi"
+    
+    # initiatialization method
+    def __init__ (self, first, last, a, c,  sect):
+        self.fname = first
+        self.lname = last
+        self.age = a
+        self.code = c
+        self.section = sect
+    def printvar(self):
+        print("First name is ", self.fname)
+        print("Last name is ", self.lname)
+        print("Age is ", self.age)
+        print("Code of student is", self.code)
+        print("section of student is ", self.section)
+        print("Address of student is ", self.address)
+    def changesection(self,s):
+        self.section=s
+      
+    @classmethod
+    def chngadd(self):
+        self.address="Gurugram"
